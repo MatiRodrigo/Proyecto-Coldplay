@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content%}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/formulario.css' %}">
+    <title>Contacto</title>
+</head>
+<body>
+    <main>
+        <div class="formulario">
+            <form id="formulario">
+                <label for="name">Nombre/s: <input type="text" id="nombre"  name="nombre"></label>
+                <label for="name">Apellido/s: <input type="text" id="apellido"  name="apellido"></label>
+                <label for="name">Email: <input type="email" id="email"  name="email"></label>
+                <label for="name">Numero de contacto: <input type="text" id="numero"  name="numero"></label>
+                <label for="name">Asunto: <input type="text" id="asunto"  name="asunto"></label>
+                <label for="name">Contenido: <textarea name="contenido" id="contenido" placeholder="Introduce tu Peticion aqui..." cols="30" rows="6"></textarea></label>
+                <button class="submit" type="submit">Enviar</button>
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            <div class="okay" id="okay">
+				<img src="{% static 'img/iconos/check.png' %}" class="check">
+				<p class="form_send">Tu formulario ya fue enviado</p>
+			</div>
+			
+        </div>
+	
+    </main>
+
+    
+	<script type="text/javascript" src="{% static './js/productos.js' %}"></script>
+    <script src="https://sheetdb.io/handlebars.js"></script>
+</body>
+</html>
+
+{% endblock %}

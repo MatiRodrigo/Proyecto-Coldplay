@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content%}
+
+<head>
+    <link rel="stylesheet" href="{% static './css/nosotros.css' %}">
+</head>
+<h1>SOBRE NOSOTROS</h1>
+
+<section class="container blocks">
+
+
+    <div class="block__container">
+        <div class="block__image">
+            <img src="{% static './img/4ChrisMartin.jpg' %}" alt="Descripción de la imagen">
+        </div>
+
+        <div class="block__text">
+            <h2 class="block__name">Chris Martin</h2>
+            <p class="block__copy">Destaco mi pasión por la música, mi papel en Coldplay y mi compromiso con causas sociales, mientras busco conectar con el público a través de canciones significativas.</p>
+        </div>
+    </div>
+
+
+
+    <div class="block__container">
+        <div class="block__image">
+            <img src="{% static './img/1jonny.jpg' %}" alt="Descripción de la imagen">
+        </div>
+
+        <div class="block__text">
+            <h2 class="block__name">Jonny Buckland</h2>
+            <p class="block__copy">Destaco mi pasión por la guitarra y mi papel en Coldplay como guitarrista principal. Menciono mi dedicación a crear melodías y sonidos únicos, así como mi colaboración con la banda para crear música que conmueve a las personas</p>
+        </div>
+    </div>
+
+    <div class="block__container">
+        <div class="block__image">
+            <img src="{% static './img/2GuyBerryman.jpg' %}" alt="Descripción de la imagen">
+        </div>
+
+        <div class="block__text">
+            <h2 class="block__name">Guy Berryman</h2>
+            <p class="block__copy">Destaco mi pasión por el bajo y mi papel en Coldplay como bajista. Destaco mi enfoque en crear líneas de bajo memorables y sólidas, y mi contribución para establecer el ritmo y la estructura de nuestras canciones.</p>
+        </div>
+    </div>
+
+
+    <div class="block__container">
+        <div class="block__image">
+            <img src="{% static './img/1WillChampion.jpg' %}"alt="Descripción de la imagen">
+        </div>
+
+        <div class="block__text">
+            <h2 class="block__name">Will Champion</h2>
+            <p class="block__copy">
+                destaco mi pasión por la batería y mi rol en Coldplay como baterista. Me enfoco en proporcionar el ritmo y la energía necesarios para nuestras canciones, además de contribuir con coros y otros instrumentos en algunas ocasiones.</p>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

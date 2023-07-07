@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static './css/footer.css' %}">
+    <link rel="stylesheet" href="{% static './css/header.css' %}">
+</head>
+<body>
+        <div class="nav">
+            <div class="nav__container container">
+                <a class="link" href="{% url 'index'%}">Inicio</a>
+                <a class="link" href="{% url 'nosotros'%}">Sobre Nosotros</a>
+                <a class="link" href="{% url 'productos'%}">Productos</a>
+                <a class="link" href="{% url 'formulario'%}">Contacto</a>
+            </div>
+        </div>
+            
+
+    {% block content%}
+
+    {% endblock %}
+
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__icons">
+
+                <a href="https://www.facebook.com/coldplay" target="_blank" class="footer__icon fab fa-brands fa-facebook"></a>
+                <a href="https://twitter.com/coldplay" target="_blank" class="footer__icon fab fa-brands fa-twitter"></a>
+                <a href="https://www.instagram.com/coldplay/" target="_blank" class="footer__icon fab fa-brands fa-instagram"></a>
+                <a href="https://www.youtube.com/@coldplay/featured" target="_blank" class="footer__icon fab fa-brands fa-youtube"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/024b4cb82b.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

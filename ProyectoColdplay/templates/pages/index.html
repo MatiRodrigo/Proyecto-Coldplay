@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="{% static './css/styles.css' %}">
+    <link rel="stylesheet" href="{% static './css/footer.css' %}">
+</head>
+<body>
+
+    <header class="header">
+        <secticss class="header__main container">
+            <div class="header__text">
+                <h1 class="header__title">Coldplay</h1>
+
+                <a class="header__link" href="{% url 'index' %}">Inicio</a>
+                <a class="header__link" href="{% url 'nosotros' %}">Sobre Nosotros</a>
+                <a class="header__link" href="{% url 'productos' %}">Productos</a>
+                <a class="header__link" href="{% url 'formulario' %}">Contacto</a>
+            </div>
+
+            <figure class="header__img">
+                <img src="{% static './img/Coldplaydeg.png' %}" alt="Coldplay Integrantes"
+                    class="header__picture">
+
+            </figure>
+        </secticss
+    </header>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__icons">
+
+                <a href="#" class="footer__icon fab fa-brands fa-facebook"></a>
+                <a href="#" class="footer__icon fab fa-brands fa-twitter"></a>
+                <a href="#" class="footer__icon fab fa-brands fa-instagram"></a>
+                <a href="#" class="footer__icon fab fa-brands fa-youtube"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/024b4cb82b.js" crossorigin="anonymous"></script>
+</body>
+</html>
